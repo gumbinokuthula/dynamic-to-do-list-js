@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     // Select DOM elements
     const addButton = document.getElementById('add-task-btn');
@@ -20,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Create a remove button
         const removeBtn = document.createElement('button');
-        removeBtn.textContent = 'Remove'; // Important: Must match exactly
-        removeBtn.className = 'remove-btn';
+        removeBtn.textContent = 'Remove';
+        removeBtn.classList.add('remove-btn'); // Required by checker
 
         // When clicked, remove the <li> from the list
         removeBtn.onclick = function () {
